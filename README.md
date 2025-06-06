@@ -1,6 +1,23 @@
-# NOAH App
+# 🌊 NOAH App – Núcleo de Operação e Apoio em Havocs
 
-Este é o aplicativo móvel **NOAH - Núcleo de Operação e Apoio em Havocs**, desenvolvido para fornecer recursos essenciais em situações de emergência, como kits de emergência, rotas seguras e contatos importantes.
+Aplicativo móvel criado para fornecer recursos essenciais em situações de emergência urbana, como enchentes, desastres naturais e riscos ambientais. O NOAH oferece funcionalidades como rotas seguras, kits de emergência, contatos importantes e mensagens rápidas.
+
+> 🎨 Interface baseada no [Figma original](https://www.figma.com/design/Tg0n80iicrJLOHcWWQrBLA/NOAH?node-id=0-1&t=IUxAMXbHligvbkjy-1)  
+> 💻 Código original por [@Biahellens](https://github.com/Biahellens)  
+> 💅 Estilização implementada por [@celiobyazbek](https://github.com/celiobyazbek)
+
+---
+
+## 📱 Funcionalidades
+
+- 📞 Contatos de emergência com ligação direta  
+- 📝 Mensagem rápida customizável  
+- 🧰 Kit de sobrevivência com itens essenciais  
+- 🗺️ Mapa com pontos seguros  
+- 🚨 Rota de fuga traçada no mapa  
+- 💅 Interface responsiva e visual moderno
+
+---
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -15,50 +32,82 @@ O projeto NOAH é construído utilizando as seguintes tecnologias e ferramentas:
 * **[react-native-maps](https://github.com/react-native-maps/react-native-maps)**: Componente de mapa para React Native, que fornece integração com Google Maps e Apple Maps, essencial para exibir rotas e áreas de risco.
 * **[@expo/vector-icons](https://docs.expo.dev/guides/icons/)**: Uma biblioteca abrangente de ícones vetorizados que integra facilmente com projetos Expo e React Native, oferecendo uma vasta gama de ícones para a interface do usuário.
 
-## ⚙️ Como Configurar e Rodar o Projeto
+---
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone [URL_DO_SEU_REPOSITORIO]
-    cd NOAH-App
-    ```
-2.  **Instale as dependências:**
-    ```bash
-    npm install
-    # ou se preferir yarn
-    # yarn install
-    ```
-    *Certifique-se de ter as dependências do React Navigation e react-native-maps instaladas conforme as instruções:*
-    ```bash
-    npx expo install @react-navigation/native @react-navigation/native-stack @react-navigation/bottom-tabs react-native-screens react-native-safe-area-context react-native-maps @expo/vector-icons
-    ```
-3.  **Configurações de Chave de API (Google Maps):**
-    Adicione suas chaves de API do Google Maps (para Android e iOS) no arquivo `app.json` conforme as instruções da documentação do `react-native-maps` e do Expo.
+## ⚙️ Como Rodar o Projeto
 
-    ```json
-    {
-      "expo": {
-        // ... outras configurações
-        "ios": {
-          "supportsTablet": true,
-          "config": {
-            "googleMapsApiKey": "SUA_CHAVE_DE_API_DO_Maps_IOS"
-          }
-        },
-        "android": {
-          // ...
-          "config": {
-            "googleMaps": {
-              "apiKey": "SUA_CHAVE_DE_API_DO_Maps_ANDROID"
-            }
-          }
+### 1. Clone o repositório
+```bash
+git clone https://github.com/celiobyazbek/noah-app.git
+cd noah-app
+```
+
+### 2. Instale as dependências
+```bash
+npm install
+```
+
+### 3. Instale os pacotes obrigatórios
+```bash
+npx expo install @react-navigation/native @react-navigation/native-stack @react-navigation/bottom-tabs react-native-screens react-native-safe-area-context react-native-maps @expo/vector-icons
+```
+
+### 4. (Opcional) Configure sua API do Google Maps
+No arquivo `app.json`:
+
+```json
+{
+  "expo": {
+    "ios": {
+      "config": {
+        "googleMapsApiKey": "SUA_CHAVE_API_IOS"
+      }
+    },
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "SUA_CHAVE_API_ANDROID"
         }
       }
     }
-    ```
-4.  **Inicie o aplicativo:**
-    ```bash
-    npm start
-    # ou yarn start
-    ```
-    Isso abrirá o Metro Bundler no seu navegador. Você pode então escanear o código QR com o aplicativo Expo Go no seu celular ou usar os emuladores/simuladores.
+  }
+}
+```
+
+### 5. Rode o app
+```bash
+npx expo start
+```
+
+Abra com Expo Go ou use `--web` para rodar no navegador.
+
+---
+
+## ✨ Estilização Visual
+
+- Cartões com sombra, borda arredondada e padding moderno  
+- Paleta de cores alinhada ao tema de emergência (vermelho, azul, cinza)  
+- Tipografia legível com contraste adequado  
+- Layout mobile first com responsividade real  
+- Telas: `Contatos`, `Alertas`, `Kit`, `Mapa` e `Rotas`
+
+---
+
+## 👥 Créditos
+
+- 🎨 **Design (Figma):** [Gabriela Noleto Costa](https://www.linkedin.com/in/gabriela-noleto-costa/)  
+- 💻 **Código original:** [@Biahellens](https://github.com/Biahellens)  
+- 💅 **Estilização (v1.0):** [@celiobyazbek](https://github.com/celiobyazbek)
+
+---
+
+## 📦 Versão
+
+**v1.0.0** – Estilização final baseada no Figma + melhorias visuais  
+🔗 [Ver release completa](https://github.com/celiobyazbek/noah-app/releases/tag/v1.0.0)
+
+---
+
+## 📄 Licença
+
+Distribuído sob a licença VagaKey.
